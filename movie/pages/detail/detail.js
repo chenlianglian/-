@@ -26,7 +26,7 @@ Page({
      wx.request({
         url: 'https://api.douban.com/v2/movie/subject/'+movieId,
         header: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/text'
         },
         success: function(res) {
           var subject =res.data;
